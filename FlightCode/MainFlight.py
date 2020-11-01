@@ -1,7 +1,6 @@
 # Main Flight Code
 # Set to run on boot
 
-
 #! /usr/bin/env python3
 import time
 import serial
@@ -142,7 +141,7 @@ def takepic(yaw):
     # convert into format dd/mm/YY H:M:S
     dt_string = now.strftime("%d-%m-%Y_%H-%M-%S")
     yaw = round(yaw, 1)
-    variable = 'Albert_' + '{p}_{yawval}_{timeval}'.format(p=1, yawval = yaw, timeval = dt_string) + '.jpg'
+    variable = 'Avik_' + '{p}_{yawval}_{timeval}'.format(p=1, yawval = yaw, timeval = dt_string) + '.jpg'
     # print(variable)
     empty_list.append(variable)
     camera.capture(variable)
