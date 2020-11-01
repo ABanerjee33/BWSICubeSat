@@ -1,4 +1,3 @@
-# astrobeever@gmail.com, astrobeever2020
 import serial
 import time
 import threading
@@ -71,7 +70,7 @@ def serialreadsignal(ser):
             pass
 
         if filename == "uploadfile.txt":
-            path = r"C:\Users\Alm\Documents\GitHub\AstroBeever\Images\Albert"   
+            path = r"C:\Users\SuperSunny\Documents\GitHub\AstroBeever\Images\Avik"   
 
             # iterating thought all the files/folder 
             # of the desired directory 
@@ -101,8 +100,8 @@ def googledrivepush(filename):
 #function for uploading image to Github
 def git_push():
     try:
-        repo = Repo('/home/Alchu/AstroBeever')
-        repo.git.add('/home/Alchu/AstroBeever/Images/Albert') #PATH TO YOUR IMAGES FOLDER, SHOULD BE LOCATED IN FlatSatChallenge/Images/YOURFOLDER
+        repo = Repo('/home/pi/AstroBeever')
+        repo.git.add('/home/pi/AstroBeever/Images/Avik') #PATH TO YOUR IMAGES FOLDER, SHOULD BE LOCATED IN FlatSatChallenge/Images/YOURFOLDER
         repo.index.commit('New Photo')
         print('made the commit')
         origin = repo.remote('origin')
