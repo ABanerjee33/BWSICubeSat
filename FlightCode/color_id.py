@@ -45,8 +45,8 @@ from skimage.measure import label, regionprops
 def git_push():
     # From the FlatSatChallenge, a function to automatically upload to GitHub
     try:
-        repo = Repo('/home/nicom26/AstroBeeverPrivate') #TODO: MAKE SURE TO REPLACE "nicom26" you YOUR username
-        repo.git.add('/home/nicom26/AstroBeeverPrivate') #TODO: SAME THING HERE
+        repo = Repo('/home/avikb/AstroBeeverPrivate') #TODO: MAKE SURE TO REPLACE "avikb" to YOUR username
+        repo.git.add('/home/avikb/AstroBeeverPrivate') #TODO: SAME THING HERE
         repo.index.commit('New Commit')
         print('made the commit')
         origin = repo.remote('origin')
@@ -616,7 +616,7 @@ def square_list(pixels, small, med, big, buffer, max_small, max_med, max_big):
 
 # MAIN SCRIPT:
 
-YOUR_NAME = "Nico_" #TODO: CHANGE TO YOUR NAME OR THINGS WILL BE CONFUSING
+YOUR_NAME = "Avik_" #TODO: CHANGE TO YOUR NAME OR THINGS WILL BE CONFUSING
 
 start_time = time.time()
 
